@@ -1,38 +1,115 @@
-.App {
+.container {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 15px;
+}
+.nav-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.searchbar {
+  width: 25%;
+  border-radius: 5px;
+  border: 1px solid skyblue;
+  height: 40px;
+  padding: 5px;
+}
+.main {
+  display: flex;
+  padding: 0 15px;
+}
+.right-section {
+  width: 50%;
+}
+.left-section {
+  width: 50%;
+}
+.card,
+.weekly-forcast{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  margin: 15px;
+  
+}
+
+.card .title,
+.weekly-forcast .title {
+  width: 100%;
   text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card .card-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-box button{
+  background-color:skyblue;
+  color: #fff;
+  border:1px solid #fff;
+  border-radius: 5px;
+  width: 80px;
+  font-size: 16px;
+}
+.mapBox{
+  margin-top: 15px;
+  width:100%;
+  overflow:hidden;
+  height:50%;
+  border:1px solid skyblue;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.weather-icon {
+  width: 100px;
+  object-fit: cover;
+}
+.more-data{
+  color: skyblue;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slider .card{
   display: flex;
   flex-direction: column;
+  margin: 5px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 85%;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group{
+  margin: 0 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group input{
+  padding: 5px 10px;
+}
+.form{
+  display: flex;
+}
+.btn-group button{
+ background-color: skyblue;
+ margin: 15px;
+ border: none;
+ border-radius: 2px;
+height: 30px;
+width: 100px;
+cursor: pointer;
 }
